@@ -24,6 +24,8 @@ export interface Workout {
 // ===== Workout Types =====
 
 export const createWorkoutType = async (name: string): Promise<void> => {
+  console.log('base url', BASE_URL);
+  
   await fetch(`${BASE_URL}/workout-types`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
