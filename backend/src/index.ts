@@ -4,10 +4,12 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import workoutTypeRoutes from './routes/workoutType';
 import workoutRoutes from './routes/workout';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 const PORT = 1000;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/workout-app';
+const MONGO_URI = process.env.MONGO_URI  as string;
 
 app.use(cors());
 app.use(bodyParser.json());
