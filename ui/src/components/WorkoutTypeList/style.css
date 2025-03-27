@@ -1,0 +1,46 @@
+.workout-type-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.workout-type-list h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.workout-type-list button {
+  padding: 0.6rem;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.workout-type-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.workout-type-list li {
+  margin-bottom: 0.6rem;
+  background: #f2f2f2;
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+
+.workout-type-header {
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.exercise-list {
+  margin-top: 0.5rem;
+  padding-right: 1.2rem;
+  list-style-type: disc;
+  color: #555;
+}

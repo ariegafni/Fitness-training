@@ -1,0 +1,16 @@
+.top-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.top-nav button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
