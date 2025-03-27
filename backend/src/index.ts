@@ -12,6 +12,10 @@ const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/workout-ap
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get('/isAlive', (req, res) => {
+  res.status(200).send('Server is alive');
+});
+
 app.use('/api/workout-types', workoutTypeRoutes);
 app.use('/api/workouts', workoutRoutes);
 
